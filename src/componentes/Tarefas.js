@@ -21,7 +21,7 @@ export default class Tarefas extends Component {
                 <input onChange={ this.handleChange } value={ this.state.tarefa }/>
                 <button onClick={ this.adicionaTarefa }>Adicionar</button>
                 <ul>
-                    { this.state.tarefas.map(tarefa => <li>{ tarefa }</li>) }
+                    { this.state.tarefas.map(tarefa => <li key={ tarefa }>{ tarefa }</li>) }
                 </ul>
             </Fragment>
         );
